@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>No Tie Tic Tac Toe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>No Tie Tic Tac Toe</h1>
+        <div class="mode-selection">
+            <div class="selection-group">
+                <h3>Select Mode</h3>
+                <div class="button-group" id="mode-buttons">
+                    <button class="mode-btn active" data-mode="pvp">Player vs Player</button>
+                    <button class="mode-btn" data-mode="pve">Player vs AI</button>
+                </div>
+            </div>
+            <div class="selection-group" id="ai-difficulty">
+                <h3>AI Difficulty</h3>
+                <div class="button-group" id="difficulty-buttons">
+                    <button class="difficulty-btn active" data-difficulty="easy">Easy</button>
+                    <button class="difficulty-btn" data-difficulty="medium">Medium</button>
+                    <button class="difficulty-btn" data-difficulty="hard">Hard</button>
+                </div>
+            </div>
+        </div>
+        <div class="player-turn">
+            <span>Current Turn: </span>
+            <span id="current-player">X</span>
+        </div>
+        <div class="board" id="board">
+            <!-- Game board will be dynamically created by JavaScript -->
+        </div>
+        <div class="game-controls">
+            <button id="undo-button" disabled>Undo</button>
+            <button id="redo-button" disabled>Redo</button>
+            <button id="reset-game">Reset Game</button>
+        </div>
+    </div>
+    <div id="game-over-modal" class="modal hidden">
+        <div class="modal-content">
+            <h2 id="game-result"></h2>
+            <button id="play-again">Play Again</button>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
