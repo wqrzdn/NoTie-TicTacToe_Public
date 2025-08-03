@@ -15,7 +15,7 @@
 -  **Winning combination highlight**  
 -  Reset game functionality  
 
-## 🎮 How to Play
+##  How to Play
 1. Open the live link or run `index.html` in a browser.  
 2. Choose **game mode**: Player vs Player or Player vs AI.  
 3. If AI mode, select the **difficulty level**.  
