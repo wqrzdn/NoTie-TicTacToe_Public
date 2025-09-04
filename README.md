@@ -29,4 +29,4 @@
 
 ---
 
-🚀 **Enjoy the game and challenge the AI!**
+ **Enjoy the game and challenge the AI!**
